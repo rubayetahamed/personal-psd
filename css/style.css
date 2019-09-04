@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap');
+body{
+	font-family: 'Roboto', sans-serif;
+}
+
+.navbar{
+	padding-top: 0;
+	padding-bottom: 0;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: 100;
+    padding-top: 25px;
+    padding-bottom: 20px;
+    padding-left: 15px;
+    padding-right: 15px;
+    position: relative;
+}
+.navbar-dark .navbar-nav .nav-link::after{
+	content: "";
+	position: absolute;
+	background-color: #6cc1D8;
+	height: 0;
+	width: 100%;
+	left: 0;
+	bottom: 0;
+	transition: 0.5s;
+}
+.navbar-dark .navbar-nav .nav-link:hover::after{
+	height: 5px;
+}
+.navbar-dark .navbar-nav .nav-link::before{
+	content: "";
+	position: absolute;
+	background-color: #6cc1D885;
+	height: 0;
+	width: 100%;
+	top: 0;
+	left: 0;
+	z-index: -1;
+	transition: 0.5s;
+
+}
+.navbar-dark .navbar-nav .nav-link:hover::before{
+	height: 100%
+}
+.baner-section{
+	background-image: url(../images/bg.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+}
+.baner-section .row{
+	min-height: 110vh;
+}
+.baner-content{
+	text-align: center;
+}
+.baner-content h1{
+	color: #61bdd5;
+	text-transform: uppercase;
+	font-weight: 700;
+	font-size: 3em;
+	letter-spacing: 3px;
+}
+.baner-content h1 span{
+    font-weight: 400;
+	text-transform: initial;
+	color: #fff;
+}.baner-content p{
+	font-size: 15px;
+    color: #fff;
+    max-width: 450px;
+    margin: 40px auto;
+}
+
+.baner-content ul{}
+.baner-content ul li{
+	margin: 0 10px;
+}
+.btn-custom{
+	border: 2px solid #61bdd5;
+	border-radius: 0;
+	color: #fff;
+	text-transform: uppercase;
+	font-size: 15px;
+	background-color: #61bdd5;
+	border-bottom-left-radius: 20px;
+	padding-left:20px;
+	padding-right: 20px;
+	transition: 0.5s;
+
+}
+.btn-custom:hover{
+	background-color: #61bdd500;
+	color: #fff;
+}
+.btn-custom-reverse{
+	border: 2px solid #61bdd5;
+	border-radius: 0;
+	color: #fff;
+	text-transform: uppercase;
+	font-size: 15px;
+	border-bottom-right-radius: 20px;
+	padding-left:20px;
+	padding-right: 20px;
+	transition: 0.5s;
+}
+.btn-custom-reverse:hover{
+	background-color: #61bdd5;
+	color: #fff;
+}
+.social-link{
+	position: absolute;
+	right: 50px;
+	top: 40%;
+}
+.social-link li{}
+.social-link li a{
+	    width: 25px;
+    height: 25px;
+    line-height: 25px;
+    border-radius: 50%;
+    background-color: #fff;
+    font-size: 15px;
+    display: block;
+    text-align: center;
+	margin-bottom: 12px;
+	color: #777;
+	transition: 0.5s;
+}
+.social-link li a:hover{
+	background-color: #61bdd5;
+	color: #fff;
+}
+.social-link li span{
+	position: absolute;
+	color: #fff;
+	text-transform: capitalize;
+	width: 60px;
+	font-size: 12px;
+	transform: rotate(-90deg);
+	bottom: -40px;
+	left: -16px;
+}
+.aboutme-section{
+	padding: 100px 0;
+}
+.aboutme-img{}
+
+
+.aboutme-img img{}
+.aboutme-content{}
+.aboutme-content p{}
+
+
+.heading{
+	text-align: center;
+	position: relative;
+	margin-bottom: 50px;
+}
+.heading h1{
+	font-size: 4em;
+	text-transform: uppercase;
+	font-weight: 600;
+	color: #61bdd5;
+}
+.heading span{
+	position: absolute;
+	font-size: 109px;
+	text-transform: uppercase;
+	top: 0;
+	left: 0;
+	font-weight: 900;
+	color: #6d6d6d0f;
+	line-height: 1;
+	z-index: -1;
+}
